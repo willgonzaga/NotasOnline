@@ -179,7 +179,7 @@ app.get("/newnote", function(req, res) {
     }
 })
 
-app.post("/insert", function(req, res) {
+app.post("/insertnote", function(req, res) {
     if(req.session.email) {
         async function main() {
             await client.connect();
