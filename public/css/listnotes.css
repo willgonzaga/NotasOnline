@@ -65,6 +65,20 @@ section {
     padding: 20px;
 }
 
+.newnote a {
+    background-color: unset;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.788);
+    border: solid;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.newnote a:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+}
+
 input[type=submit] {
     background-color: unset;
     font-size: 20px;

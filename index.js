@@ -171,7 +171,7 @@ app.get("/notes/", function(req, res) {
     }
 })
 
-app.post("/newnote", function(req, res) {
+app.get("/newnote", function(req, res) {
     if(req.session.email) {
         res.render("insert");
     } else {
