@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: currentColor;
+    text-decoration: none;
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  
+*::-webkit-scrollbar-thumb {
+    background-color: currentColor;
+    border-radius: 20px;
+}
+
+html,body {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #121212;
+    margin: 0 auto;
+    font-family: 'system-ui';
+    color: white;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+a {
+    color: white;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logincard {
+    display: flex;
+    width: 30%;
+    height: 70%;
+    background-color: rgb(77, 77, 77);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 70px;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.inputs label + input {
+    margin-bottom: 30px;
+}

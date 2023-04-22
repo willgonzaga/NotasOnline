@@ -1,0 +1,16 @@
+.nota {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.nota h2 {
+    font-size: 30px;
+}
+
+.nota p {
+    margin: 20px;
+    font-size: 15px;
+    text-align: justify;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/listnotes.css">
+    <link rel="stylesheet" href="../css/insert.css">
+    <title>Criar anotação</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="insert">
+                <h1>Nova anotação</h1>
+                <form action="insert" method="POST">
+                    <label for="notename">Nome</label>
+                    <input type="text" name="notename" id="notename" maxlength="100">
+                    <label for="content">Conteúdo</label>
+                    <textarea name="content" id="content" rows="15"></textarea>
+                    <input type="submit" value="Salvar">
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

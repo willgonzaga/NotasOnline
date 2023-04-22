@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>NotasOnline</title>
+</head>
+<body>
+    <section class="section main">
+        <div class="logincard">
+            <div class="infos">
+                <h1>NotasOnline - Login</h1>
+            </div>
+            <% if(erro) { %>
+                <p style="color: red">Email ou senha incorreta!</p>
+            <% } %>
+            <form action="/" method="POST">
+                <div class="inputs">
+                    <label for="name">Email</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="password">Senha</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+                <div class="confirm">
+                    <input type="submit" value="Confirmar">
+                </div>
+                <div class="registro">
+                    <a href="/registro">Esqueci a minha senha</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

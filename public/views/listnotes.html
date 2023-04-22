@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/listnotes.css">
+    <title>Notas</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="newnote">
+                <form action="newnote" method="POST">
+                    <input type="submit" value="Criar nova anotação">
+                </form>
+            </div>
+            <div class="list">
+                <% for(var i=0; i<notas.length; i++) { %>
+                    <a href="notes/?id=<%- notas[i].id %>"> <%- notas[i].notename %></a>
+                <% } %>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
